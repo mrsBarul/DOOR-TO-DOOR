@@ -474,6 +474,7 @@ span {
 
   .CartContainer {
     width: 250px;
+    gap: 10px;
   }
 }
 
