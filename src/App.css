@@ -663,7 +663,7 @@ span {
 }
 
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 450px) {
   nav {
     margin-left: 10px;
     margin-right: 10px;
