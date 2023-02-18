@@ -19,8 +19,6 @@ const DiscountItem = ({ imageContainer }) => {
     setTimeout(next, 5000)
 
 
-
-
     return(
         <div>
             <img className="discountImage" src={`./discountImage/${ img }.png`} alt='discount'/>
