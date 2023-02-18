@@ -6,7 +6,8 @@ export const dataProduct = [
         price: 1.50,
         description: 'Red-Chief apples',
         value: 1.00,
-        category: 'FRUIT'
+        category:  'FRUIT'
+
 
     },
     {
@@ -17,6 +18,7 @@ export const dataProduct = [
         description: 'Ecuadorian bananas',
         value: 1.00,
         category: 'FRUIT'
+
     },
     {
         id: 3,
@@ -88,7 +90,7 @@ export const dataProduct = [
         price: 3.00,
         description: 'Cocoa croissant',
         value: "1",
-        category: 'DESSERT'
+        category: 'DESSERT' 
     },
     {
         id: 11,
@@ -142,7 +144,7 @@ export const dataProduct = [
         price: 9.00,
         description: 'Ice Cream in the assortment',
         value: "1",
-        category: 'DESSERT'
+        category: 'DESSERT' 
     },
     {
         id: 17,
@@ -242,6 +244,7 @@ export const dataProduct = [
         description: 'Bolognese pasta with soy minced meat',
         value: "1",
         category: 'FOOD'
+
     },
     {
         id: 28,
@@ -340,7 +343,7 @@ export const dataProduct = [
         price: 6.70,
         description: 'Sweet red pepper',
         value: 1.00,
-        category: 'VEGETABLE'
+        category: 'VEGETABLE' 
     },
     {
         id: 39,

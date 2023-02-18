@@ -8,7 +8,11 @@ const Filter = ({ category }) => {
 
     return(
         <div className="categoriesItem">
-            <p onClick={() => dispatch(filter(category))}><span className="circle"></span>{ category }</p>
+            <p onClick={() => dispatch(filter(category))}>
+                <span className="circle">
+                    <img src={ `./categoriesImg/${ category }.png `} alt="icons"/>
+                </span>
+            { category }</p>
         </div>
     )
 }

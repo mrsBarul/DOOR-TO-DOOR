@@ -17,8 +17,8 @@ const Products = () => {
                 else if (searchWord === '') return selectedCategory === productItem.category
                 return productItem.name.toLowerCase().includes(searchWord)
             })
-            .map((productItem, index) => 
-            <ProductItem key={ index } productItem={ productItem }/>)}
+            .map(productItem => 
+            <ProductItem key={ productItem.id } productItem={ productItem }/>)}
         </div>
     )
 }

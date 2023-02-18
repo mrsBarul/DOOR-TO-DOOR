@@ -7,6 +7,7 @@ const Cart = () => {
     const cartItems = useSelector(getCartItems);
     const totalPrice = useSelector(getTotalPrice);
     const dispatch = useDispatch()
+    console.log(cartItems)
 
     return(
         <div className="CartContainer">

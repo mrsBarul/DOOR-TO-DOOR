@@ -9,7 +9,7 @@ const Categories = () => {
             <h2>CATEGORIES</h2>
             <div className="categories">
                 {['FOOD', 'FRUIT', 'VEGETABLE', 'BERRY', 'MEAT, FISH', 'BREAD',  'DESSERT', 'DRINK', 'COSMETIC', 'ALL'].map
-                ((category, index) => <Filter key={ index } category={ category }/>)}
+                ((category, index) => <Filter key={ index }  category={ category }/>)}
             </div>
             
         </div>

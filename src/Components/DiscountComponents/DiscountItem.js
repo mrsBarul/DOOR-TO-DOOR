@@ -1,27 +1,25 @@
-import { useEffect, useState } from "react";
-import { dataDiscount } from "../../data/dataDiscount";
+import { useState } from "react";
 
-const DiscountItem = () => {
+const DiscountItem = ({ imageContainer }) => {
 
-
-    const [discount, setDiscount] = useState(0);
-    const { img } = dataDiscount[discount];
+    const [image, setImage] = useState(0)
+    const { img } = imageContainer[image]
 
     const next = () => {
-        setDiscount((discount =>{
-            discount ++;
-            if(discount > dataDiscount.length - 1) {
-                return discount = 0;
+        setImage((image => {
+            image ++;
+            if(image > imageContainer.length - 1) {
+                return image = 0;
             }
-            return discount
+            return image
+            
         }
-        ))
-    }
+    ))}
 
-    useEffect(() => {
-        setTimeout((next)
-        , 3000)
-    }, [discount])
+    setTimeout(next, 5000)
+
+
+
 
     return(
         <div>
