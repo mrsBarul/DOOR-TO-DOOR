@@ -6,7 +6,7 @@ const Discount = () => {
 
 
     return(
-        <div>
+        <div className="Discount">
             <DiscountItem imageContainer = { imageContainer }/>
         </div>
     )

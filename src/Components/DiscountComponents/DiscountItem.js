@@ -1,27 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const DiscountItem = ({ imageContainer }) => {
 
     const [image, setImage] = useState(0)
-    const { img } = imageContainer[image]
 
-    const next = () => {
-        setImage((image => {
-            image ++;
-            if(image > imageContainer.length - 1) {
-                return image = 0;
-            }
-            return image
-            
-        }
-    ))}
-
-    setTimeout(next, 5000)
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setImage((prevSlide) =>
+            prevSlide === imageContainer.length - 1 ? 0 : prevSlide + 1
+        );
+        }, 4000);
+    
+        return () => clearInterval(interval);
+    }, [imageContainer.length]);
+    
 
 
     return(
         <div>
-            <img className="discountImage" src={`./discountImage/${ img }.png`} alt='discount'/>
+            {imageContainer.map((item, index) => (
+                <img
+                key={index}
+                className={`discountImage ${index === image ? 'active' : ''}`}
+                style={{ opacity: index === image ? 1 : 0 }}
+                src={`./discountImage/${item.img}.png`}
+                alt='discount'
+                />
+            ))}
         </div>
     )
 }

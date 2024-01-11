@@ -192,9 +192,26 @@ nav {
   transition: 1s ease;
 }
 
+
+.Discount {
+  position: relative;
+  height: 400px;
+}
+
+
 .discountImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.7s ease-in;
   width: 1224px;
   height: 400px;
+}
+
+.discountImage.active {
+  opacity: 1;
+  transition: opacity 0.7s ease-in;
 }
 
 
@@ -426,6 +443,11 @@ span {
 }
 
 @media all and (max-width: 2000px) {
+
+  .Discount {
+    height: 300px;
+  }
+
   .discountImage {
     width: 952px;
     height: 300px;
@@ -450,6 +472,11 @@ span {
   .Components {
     gap: 20px;
   }
+
+  .Discount {
+    height: 250px;
+  } 
+
   .discountImage {
     width: 700px;
     height: 250px;
@@ -488,6 +515,10 @@ span {
   .DiscountProducts {
     gap: 20px;
   }
+
+  .Discount {
+    height: 200px;
+  } 
 
   .discountImage {
     width: 550px;
@@ -537,6 +568,10 @@ span {
   .DiscountProducts {
     gap: 20px;
   }
+
+  .Discount {
+    height: 250px;
+  } 
 
   .discountImage {
     width: 850px;
@@ -684,6 +719,10 @@ span {
     display: none;
   }
 
+  .Discount {
+    height: 150px;
+  } 
+
   .discountImage {
     width: 350px;
     height: 150px;
@@ -719,6 +758,10 @@ span {
   .DiscountProducts {
     gap: 10px;
   }
+
+  .Discount {
+    height: 100px;
+  } 
 
   .discountImage {
     width: 300px;
