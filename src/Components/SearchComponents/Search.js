@@ -10,6 +10,7 @@ const Search = () => {
 
     const finalSearch = (e) => {
         e.preventDefault()
+        dispatch(search(word.toLowerCase()))
     }
 
     return(
